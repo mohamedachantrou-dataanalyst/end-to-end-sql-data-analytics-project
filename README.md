@@ -59,6 +59,7 @@ Le projet met en pratique plusieurs concepts importants en SQL :
 
 La pipeline suit une architecture en **4 couches** :
 
+
 ![Description de l'image](PipelineSQL/pipeline_architecture.png)
 
 
