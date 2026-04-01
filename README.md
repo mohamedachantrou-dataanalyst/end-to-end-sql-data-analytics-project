@@ -8,11 +8,11 @@ L’idée est de reproduire une architecture classique utilisée dans les projet
 
 **nettoyage des données → enrichissement → data marts → analyses métier**
 
-Les données utilisées dans ce projet sont **générées fictivement** afin de simuler un environnement e-commerce et web analytics.
+Les données utilisées dans ce projet sont **générées fictivement** afin de simuler un Business e-commerce.
 
 ---
 
-# Objectifs
+## Objectifs
 
 Ce projet montre comment :
 
@@ -24,16 +24,17 @@ Ce projet montre comment :
 
 ---
 
-# Outils utilisés
+## compéténces démontrées
 
-- **MySQL**
 - **SQL**
-- **Git / GitHub**
-- Modélisation de données
+- **Modélisation de données**
+- **Data Cleaning**
+- **Ad hoc Analysis**
+- **Reporting**
 
 ---
 
-# Concepts SQL utilisés
+## Concepts SQL utilisés
 
 Le projet met en pratique plusieurs concepts importants en SQL :
 
@@ -41,10 +42,12 @@ Le projet met en pratique plusieurs concepts importants en SQL :
 - **CTE (Common Table Expressions)**
 - **Window Functions**
 - **Agrégations**
+- **Sous-requêtes**
 - **Nettoyage et transformation de données**
+- **Date functions**
 
 ---
 
-# Architecture du projet
+## Données brutes et modèle de données
 
-La pipeline suit une architecture en **4 couches** :
+![Description de l'image](Data/data_model.png)
