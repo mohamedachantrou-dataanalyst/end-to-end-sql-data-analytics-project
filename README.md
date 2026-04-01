@@ -60,6 +60,74 @@ Le projet met en pratique plusieurs concepts importants en SQL :
 La pipeline suit une architecture en **4 couches** :
 
 ![Description de l'image](PipelineSQL/pipeline_architecture.png)
+## Data Pipeline Architecture
+
+```mermaid
+flowchart TD
+
+subgraph Raw_Data["Raw Data Sources"]
+A1["db_ecommerce.raw_customers"]
+A2["db_ecommerce.raw_orders"]
+A3["db_ecommerce.raw_order_items"]
+A4["db_catalogue.db_products"]
+A5["db_catalogue.db_categories"]
+A6["db_analytics.raw_sessions"]
+end
+
+
+subgraph Layer1["Layer 1 - Staging (Cleaning & Standardization)"]
+B1["stg_customers"]
+B2["stg_orders"]
+B3["stg_products"]
+B4["stg_sessions"]
+end
+
+
+subgraph Layer2["Layer 2 - Enriched Views"]
+C1["int_enriched_orders"]
+C2["int_enriched_sessions"]
+end
+
+
+subgraph Layer3["Layer 3 - Data Marts"]
+D1["DataMart_ProductsPerf"]
+D2["DataMart_CategoriesPerf"]
+D3["DataMart_CustomerKpis"]
+D4["DataMart_DailySales"]
+D5["DataMart_WebSessions"]
+end
+
+
+subgraph Layer4["Layer 4 - Ad Hoc Analysis"]
+E1["Business Analysis Queries"]
+end
+
+
+A1 --> B1
+A2 --> B2
+A4 --> B3
+A6 --> B4
+
+B1 --> C1
+B2 --> C1
+B3 --> C1
+A3 --> C1
+
+B4 --> C2
+B1 --> C2
+
+C1 --> D1
+C1 --> D2
+C1 --> D3
+C1 --> D4
+
+C2 --> D5
+
+D1 --> E1
+D2 --> E1
+D3 --> E1
+D4 --> E1
+D5 --> E1
 
 
 ---
