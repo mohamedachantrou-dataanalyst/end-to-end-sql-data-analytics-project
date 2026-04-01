@@ -1,4 +1,4 @@
-# End-to-End SQL Data Analytics Project
+# Mise en place d’un Data Pipeline pour l’analyse de données
 
 ## Contexte du projet
 
