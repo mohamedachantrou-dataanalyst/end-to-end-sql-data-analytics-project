@@ -157,6 +157,7 @@ Exemples :
 
 ## Structure du repo
 
+```
 ├── README.md
 ├── Data/
 │  └── rawdata.sql
@@ -172,7 +173,7 @@ Exemples :
   │  └── DataMart_DailySales.sql
   │  └── DataMart_WebSessions.sql
   └── Layer4_adhoc_analysis.sql
-
+```
 
 
 ---
