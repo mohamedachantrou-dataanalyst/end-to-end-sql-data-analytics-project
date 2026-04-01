@@ -77,7 +77,7 @@ Tables créées :
 
 Transformations appliquées :
 
-- correction des incohérences (ex : `france` vs `France`)
+- correction des incohérences
 - suppression des espaces inutiles
 - gestion des valeurs manquantes
 - suppression des doublons
@@ -180,10 +180,15 @@ Exemples :
 ## Comment reproduire le projet
 
 1️⃣ Créer les données bruts ---> [Raw Data](Data/raw_data.sql)
+
 2️⃣ Créer la base de données de la pipeline (la base qui stockera la pipeline des données) ---> [Pipeline Creation](PipelineSQL/Db_pipeline.sql)
+
 3️⃣ Exécuter la couche 1 staging ---> [Layer 1](Layer1_Satging.sql)
+
 4️⃣ Exécuter la couche 2 Enriched Views ---> [Layer 2](Layer2_GlobalEnrichedViews.sql)
+
 5️⃣ Exécuter la couche 3 Data Marts dans l'ordre souhaité ---> [Layer 3](Layer3_DataMarts)
+
 6️⃣ Exécuter la couche 4 Ad Hoc Analysis ou creer des requêtes Ad Hoc personnalisées ---> [Layer 4](Layer4_AdhocAnalysis)
 
 
