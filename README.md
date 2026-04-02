@@ -1,5 +1,13 @@
 # Mise en place d’un Data Pipeline pour l’analyse de données
 
+**Secteur :** E-commerce  
+
+**Outils :** SQL
+
+**Compétences :** Data Modeling · Data Quality Management · Data Validation · Data Architecture · Ad Hoc Analysis
+
+---
+
 ## Contexte du projet
 
 Ce projet a pour objectif de démontrer la construction d’une **pipeline analytique complète en SQL**, permettant de transformer des données brutes issues de plusieurs sources en **data marts analytiques** utilisables par des data analysts pour répondre à des questions business.
